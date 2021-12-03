@@ -1,13 +1,13 @@
+// di default sono zero;
 
 let kM=0;
 let eta=0;
 
 const start=document.getElementById("calcola").addEventListener("click",function(){
 
-
-
 kM=document.getElementById("kmValue").value;
 eta=document.getElementById("ageValue").value;
+// devo aggiungere una funzione che controlla l'età
 let prezzo = kM * 0.21;
 let sconto=0;
 
@@ -29,6 +29,8 @@ if(eta<=18){
     `${kM*2.1} euro - sconto minorenni =  ${sconto.toFixed(2)} = ${prezzo.toFixed(2)} euro`;
 
 }else if(eta>=65){
+
+    
     sconto=(prezzo/100)*40;
     prezzo=prezzo-sconto;
     console.log("sconto anziani");
