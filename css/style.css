@@ -1,0 +1,8 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgba(37, 226, 53, 0.344);
+}
